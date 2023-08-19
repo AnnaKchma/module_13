@@ -34,7 +34,7 @@ public class JsonPlaceholderCommentsApp {
                 // Parse the JSON array of posts using HuTool
                 JSONArray userPosts = new JSONArray(responseContent.toString());
 
-                if (userPosts.size() <= 0) {
+                if (userPosts.size() == 0) {
                     System.out.println("No posts found for the user.");
                 } else {
                     JSONObject lastPost = userPosts.getJSONObject(userPosts.size() - 1);
