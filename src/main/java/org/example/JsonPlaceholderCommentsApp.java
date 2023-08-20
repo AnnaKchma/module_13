@@ -31,7 +31,6 @@ public class JsonPlaceholderCommentsApp {
                     responseContent.append(line);
                 }
 
-                // Parse the JSON array of posts using HuTool
                 JSONArray userPosts = new JSONArray(responseContent.toString());
 
                 if (userPosts.size() == 0) {
@@ -61,7 +60,6 @@ public class JsonPlaceholderCommentsApp {
                     responseContent.append(line);
                 }
 
-                // Parse the JSON array of comments using HuTool
                 JSONArray comments = new JSONArray(responseContent.toString());
 
                 String fileName = "user-" + userId + "-post-" + postId + "-comments.json";

@@ -9,6 +9,10 @@ public class JsonPlaceholderApiClient {
 
     private static final String BASE_URL = "https://jsonplaceholder.typicode.com";
 
+    public static void main() {
+        main(null);
+    }
+
     public static void main(String... args) {
         createUser();
     }
